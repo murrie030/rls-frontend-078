@@ -1,13 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
+import App from "./App";
 import "bootstrap/dist/css/bootstrap.css";
 
-import Home from "./components/home";
-
-ReactDOM.render(
-  <React.StrictMode>
-    <Home />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));

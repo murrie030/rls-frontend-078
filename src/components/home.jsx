@@ -1,60 +1,63 @@
 import React, { Component } from "react";
+
 import "../css/home.css";
 
 class Home extends Component {
   render() {
     return (
-      <div className="container">
-        <div className="Home-div" id="welcome-section">
-          <h1>Connect the world...</h1>
-          <p>
-            Welcome to the application that is created for the project of
-            RailLinkSystems. This application is particular for the passenger
-            wagons. The idea is to abstract an intuitive web app into simple
-            actions in a responsive GUI. The main focus is on the{" "}
-            <a
-              href="train-composition-message.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Train Composition Message (TCM)
-            </a>
-            .
-          </p>
-          <img
-            src="/images/Railway-Traffic-Automation.jpg"
-            alt="Railway"
-            width="700"
-            height="300"
-          />
-        </div>
+      <div>
+        <div className="container">
+          <div className="Home-div" id="welcome-section">
+            <h1>Connect the world...</h1>
+            <p>
+              Welcome to the application that is created for the project of
+              RailLinkSystems. This application is particular for the passenger
+              wagons. The idea is to abstract an intuitive web app into simple
+              actions in a responsive GUI. The main focus is on the{" "}
+              <a
+                href="train-composition-message.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Train Composition Message (TCM)
+              </a>
+              .
+            </p>
+            <img
+              src="/images/Railway-Traffic-Automation.jpg"
+              alt="Railway"
+              width="700"
+              height="300"
+            />
+          </div>
 
-        <div className="Home-div" id="information-section">
-          <h1>Information</h1>
-          <p>
-            The European agency{" "}
-            <a
-              href="https://www.era.europa.eu/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              (ERA, European Union Agency for Railways)
-            </a>{" "}
-            has prescribed an extensive system of message exchange for the
-            communication between carriers and infrastructure managers (IM).﻿
-          </p>
-          <p>
-            An example of a carrier in The Netherlands is NS (Nederlandse
-            Spoorwegen) and ProRail is the infrastructure manager. The big
-            carriers, like NS, can satisfy the new standards of the ERA.
-            However, this application is made for the little ones who seem to
-            struggle with this satisfaction.
-          </p>
-          <p>
-            The main goal of this project, is to make a translation of a complex
-            SOAP message to an intuitive web app. This allows the little
-            carriers to satisfy standards too.
-          </p>
+          <div className="Home-div" id="information-section">
+            <h1>Information</h1>
+            <p>
+              The European agency{" "}
+              <a
+                href="https://www.era.europa.eu/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                (ERA, European Union Agency for Railways)
+              </a>{" "}
+              has prescribed an extensive system of message exchange for the
+              communication between carriers and infrastructure managers (IM).﻿
+            </p>
+            <p>
+              An example of a carrier in The Netherlands is NS (Nederlandse
+              Spoorwegen) and ProRail is the infrastructure manager. The big
+              carriers, like NS, can satisfy the new standards of the ERA.
+              However, this application is made for the little ones who seem to
+              struggle with this satisfaction.
+            </p>
+            <p>
+              The main goal of this project, is to make a translation of a
+              complex SOAP message to an intuitive web app. This allows the
+              little carriers to satisfy standards too.
+            </p>
+          </div>
         </div>
       </div>
     );

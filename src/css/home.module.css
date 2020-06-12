@@ -1,11 +1,11 @@
-#information-section {
+#informationSection {
   margin-top: 16px;
 }
 
-a {
+.a {
   color: #ff8c00;
 }
 
-a:hover {
+.a:hover {
   color: #d35400; /* Pumpkin */
 }

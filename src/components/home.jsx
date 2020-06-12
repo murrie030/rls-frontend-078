@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import "../css/home.css";
+import styles from "../css/home.module.css";
 
 class Home extends Component {
   render() {
@@ -15,6 +15,7 @@ class Home extends Component {
               wagons. The idea is to abstract an intuitive web app into simple
               actions in a responsive GUI. The main focus is on the{" "}
               <a
+                className={styles.a}
                 href="train-composition-message.html"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -31,11 +32,12 @@ class Home extends Component {
             />
           </div>
 
-          <div className="Home-div" id="information-section">
+          <div className="Home-div" id={styles.informationSection}>
             <h1>Information</h1>
             <p>
               The European agency{" "}
               <a
+                className={styles.a}
                 href="https://www.era.europa.eu/"
                 target="_blank"
                 rel="noopener noreferrer"

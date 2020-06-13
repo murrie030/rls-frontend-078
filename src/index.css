@@ -1,0 +1,82 @@
+/* Wrapper */
+#wrapper {
+  display: flex;
+  /* width: 100%;
+    overflow-x: hidden; */
+}
+/* End wrapper */
+
+.align-items-start {
+  align-items: flex-start !important;
+}
+
+.bg-gradient-warning {
+  background-color: #ff8c00;
+  background-image: linear-gradient(180deg, #ff8c00, 40%, #ff9f1a);
+  background-size: cover;
+}
+
+/* Container */
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* End container */
+
+.d-flex {
+  display: flex !important;
+}
+
+/* Flex-column */
+.flex-column {
+  flex-direction: column !important;
+}
+/* End of flex-column */
+
+/* Navbar */
+nav {
+  display: block;
+}
+
+.navbar,
+.navbar .container,
+.navbar .container-fluid,
+.navbar .container-sm,
+.navbar .container-md,
+.navbar .container-lg,
+.navbar .container-xl {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+  position: relative;
+  padding: 0.5rem 1rem;
+}
+/* End navbar */
+
+/* Sidebar */
+@media (min-width: 768px) {
+  .sidebar {
+    width: 14rem !important;
+  }
+}
+.sidebar {
+  width: 6.5rem;
+  min-height: 100vh;
+}
+/* End sidebar */
+
+.p-0 {
+  padding: 0 !important;
+}

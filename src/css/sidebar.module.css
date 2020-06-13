@@ -1,2 +1,17 @@
-.wrapper {
+/* @media (min-width: 768px) {
+  #sidebar {
+    width: 14rem !important;
+  }
 }
+
+#wrapper {
+  background-color: #ff8c00;
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#sidebar {
+  width: 6.5rem;
+  min-height: 100vh;
+} */

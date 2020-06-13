@@ -1,82 +1,64 @@
-/* Wrapper */
-#wrapper {
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+}
+
+/* Links */
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #d35400; /* Pumpkin */
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+/* End of links */
+
+/* Sidebar */
+.wrapper {
   display: flex;
-  /* width: 100%;
-    overflow-x: hidden; */
-}
-/* End wrapper */
-
-.align-items-start {
-  align-items: flex-start !important;
+  align-items: stretch;
 }
 
-.bg-gradient-warning {
-  background-color: #ff8c00;
-  background-image: linear-gradient(180deg, #ff8c00, 40%, #ff9f1a);
-  background-size: cover;
+#sidebar {
+  background: #ff8c00;
+  background-image: linear-gradient(180deg, #ff8c00, 40%, #ffc312);
+  color: #fff;
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
 }
 
-/* Container */
-.container,
-.container-fluid,
-.container-sm,
-.container-md,
-.container-lg,
-.container-xl {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* End container */
-
-.d-flex {
-  display: flex !important;
+#sidebar.active {
+  margin-left: 250px;
 }
 
-/* Flex-column */
-.flex-column {
-  flex-direction: column !important;
+#sidebar .sidebar-header {
+  padding: 20px;
 }
-/* End of flex-column */
 
-/* Navbar */
-nav {
+#sidebar ul.components {
+  padding: 20px 0px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1em;
   display: block;
 }
 
-.navbar,
-.navbar .container,
-.navbar .container-fluid,
-.navbar .container-sm,
-.navbar .container-md,
-.navbar .container-lg,
-.navbar .container-xl {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
+/* #sidebar ul li a:hover {
+  background: #fff;
+} */
 
-.navbar {
-  position: relative;
-  padding: 0.5rem 1rem;
-}
-/* End navbar */
-
-/* Sidebar */
-@media (min-width: 768px) {
-  .sidebar {
-    width: 14rem !important;
-  }
-}
-.sidebar {
-  width: 6.5rem;
-  min-height: 100vh;
-}
-/* End sidebar */
-
-.p-0 {
-  padding: 0 !important;
-}
+/* End of sidebar */

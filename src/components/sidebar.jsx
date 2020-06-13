@@ -1,6 +1,6 @@
 import React from "react";
 
-// import styles from "../css/sidebar.module.css";
+import Home from "../components/home";
 
 /* 
   Stateless Functional Component 
@@ -9,56 +9,69 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <div id="wrapper">
+    <div className="wrapper">
       {/* Sidebar */}
-      <nav className="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-warning p-0">
-        <div className="container-fluid d-flex flex-column p-0">
-          {/* Sidebar brand */}
-          <a
-            className="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0"
-            href="index.html"
-          >
-            <div className="sidebar-brand-icon rotate-n-15">
-              <i className="fas fa-link"></i>
-            </div>
-            <div className="sidebar-brand-text mx-3">
-              <span>RailLinkSystems</span>
-            </div>
-          </a>
-          {/* End of sidebar brand */}
-          <hr className="sidebar-divider my-0" />
-          <ul className="nav navbar-nav text-light" id="accordionSidebar">
-            <li className="nav-item" role="presentation">
-              <a className="nav-link active" href="index.html">
-                <i class="fas fa-home"></i>
-                <span>Home</span>
-              </a>
-            </li>
-            <li className="nav-item" role="presentation">
-              <a className="nav-link" href="overview.html">
-                <i class="fas fa-table"></i>
-                <span>Overview</span>
-              </a>
-            </li>
-            <li className="nav-item" role="presentation">
-              <a className="nav-link" href="train-composition-message.html">
-                <i class="fas fa-code"></i>
-                <span>Train Composition Message</span>
-              </a>
-            </li>
-          </ul>
-          {/* Sidebar toggler button */}
-          <div className="text-center d-none d-md-inline">
-            <button
-              className="btn rounded-circle border-0"
-              id="sidebarToggle"
-              type="button"
-            ></button>
+      <nav id="sidebar">
+        {/* Sidebar brand */}
+        <a
+          className="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0"
+          href="index.html"
+        >
+          <div className="sidebar-brand-icon rotate-n-15">
+            <i className="fas fa-link"></i>
           </div>
-          {/* End of sidebar toggler button */}
-        </div>
+          <div className="sidebar-brand-text mx-3">
+            <span>RailLinkSystems</span>
+          </div>
+        </a>
+        {/* End of sidebar brand */}
+
+        <ul className="list-unstyled components">
+          <li className="active">
+            <a href="index.html">
+              <i className="fas fa-home"></i>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="overview.html">
+              <i className="fas fa-table"></i>
+              Overview
+            </a>
+          </li>
+          <li>
+            <a href="train-composition-message.html">
+              <i className="fas fa-code"></i>
+              Train Composition Message
+            </a>
+          </li>
+        </ul>
       </nav>
-      {/* End of sidebar */}
+      {/* End sidebar */}
+
+      {/* Sidebar toggler button */}
+      <div id="content">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <div className="container-fluid">
+            <button
+              className="btn btn-warning"
+              id="sidebarCollapse"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i className="fas fa-align-left"></i>
+              <span>Toggle sidebar</span>
+            </button>
+          </div>
+        </nav>
+
+        <Home />
+      </div>
+      {/* End sidebar toggler button */}
     </div>
   );
 };

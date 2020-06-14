@@ -14,12 +14,7 @@ class Home extends Component {
               RailLinkSystems. This application is particular for the passenger
               wagons. The idea is to abstract an intuitive web app into simple
               actions in a responsive GUI. The main focus is on the{" "}
-              <a
-                className={styles.a}
-                href="train-composition-message.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a className={styles.a} href="train-composition-message.html">
                 Train Composition Message (TCM)
               </a>
               .
@@ -36,16 +31,11 @@ class Home extends Component {
             <h1>Information</h1>
             <p>
               The European agency{" "}
-              <a
-                className={styles.a}
-                href="https://www.era.europa.eu/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a className={styles.a} href="https://www.era.europa.eu/">
                 (ERA, European Union Agency for Railways)
               </a>{" "}
               has prescribed an extensive system of message exchange for the
-              communication between carriers and infrastructure managers (IM).﻿
+              communication between carriers and infrastructure managers (IM).
             </p>
             <p>
               An example of a carrier in The Netherlands is NS (Nederlandse

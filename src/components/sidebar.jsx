@@ -4,10 +4,13 @@ import Home from "../components/home";
 
 /* 
   Stateless Functional Component 
-  A simple function that returns a sidebar
+  A simple function that returns a sidebar and a Home component
 */
 
 const Sidebar = () => {
+  const icon = {
+    marginRight: "10px",
+  };
   return (
     <div className="wrapper">
       {/* Sidebar */}
@@ -29,19 +32,19 @@ const Sidebar = () => {
         <ul className="list-unstyled components">
           <li className="active">
             <a href="index.html">
-              <i className="fas fa-home"></i>
+              <i className="fas fa-home" style={icon}></i>
               Home
             </a>
           </li>
           <li>
             <a href="overview.html">
-              <i className="fas fa-table"></i>
+              <i className="fas fa-table" style={icon}></i>
               Overview
             </a>
           </li>
           <li>
-            <a href="train-composition-message.html">
-              <i className="fas fa-code"></i>
+            <a href="tcm.html">
+              <i className="fas fa-code" style={icon}></i>
               Train Composition Message
             </a>
           </li>
@@ -49,29 +52,10 @@ const Sidebar = () => {
       </nav>
       {/* End sidebar */}
 
-      {/* Sidebar toggler button */}
+      {/* Page Content */}
       <div id="content">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <div className="container-fluid">
-            <button
-              className="btn btn-warning"
-              id="sidebarCollapse"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i className="fas fa-align-left"></i>
-              <span>Toggle sidebar</span>
-            </button>
-          </div>
-        </nav>
-
         <Home />
       </div>
-      {/* End sidebar toggler button */}
     </div>
   );
 };

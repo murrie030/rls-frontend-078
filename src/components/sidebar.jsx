@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// import Home from "../components/home";
-
 /* 
   Stateless Functional Component 
   A simple function that returns a sidebar and a Home component

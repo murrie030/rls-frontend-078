@@ -1,14 +1,21 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Sidebar from "./components/sidebar";
-// import Home from "./components/home";
+import Home from "./components/home";
+import Overview from "./components/overview";
+import TCM from "./components/tcm";
 
 function App() {
   return (
-    <React.Fragment>
+    <Router>
       <Sidebar />
-      <main className="container">{/* <Home /> */}</main>
-    </React.Fragment>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/overview" component={Overview} />
+        <Route path="/tcm" component={TCM} />
+      </Switch>
+    </Router>
   );
 }
 

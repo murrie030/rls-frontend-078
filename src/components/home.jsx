@@ -5,7 +5,7 @@ import styles from "../css/home.module.css";
 class Home extends Component {
   render() {
     return (
-      <div className="container">
+      <div className="container" id="content">
         <div className="Home-div" id="welcome-section">
           <h1>Connect the world...</h1>
           <p>

@@ -32,7 +32,7 @@ const Sidebar = () => {
 
         <ul className="list-unstyled components">
           <Link to="/">
-            <li className="active">
+            <li>
               <a href="index.html">
                 <i className="fas fa-home" style={icon}></i>
                 Home

@@ -7,9 +7,9 @@ const CreateVehicleButton = () => {
   };
   return (
     <button type="button" className="btn btn-success" style={style}>
-      Create new train
+      Create new vehicle
     </button>
   );
 };
 
-export default CreateButton;
+export default CreateVehicleButton;

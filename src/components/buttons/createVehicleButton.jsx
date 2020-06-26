@@ -1,6 +1,6 @@
 import React from "react";
 
-const CreateButton = () => {
+const CreateVehicleButton = () => {
   const style = {
     margin: "1rem",
     float: "right",

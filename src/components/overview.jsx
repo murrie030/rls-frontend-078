@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import "./buttons/createButton";
-import CreateButton from "./buttons/createButton";
+import "./buttons/createVehicleButton";
+import CreateVehicleButton from "./buttons/createVehicleButton";
 
 class Overview extends Component {
   constructor(props) {
@@ -13,7 +13,7 @@ class Overview extends Component {
   }
 
   /* 
-    When the data is fetched successfully, it will be storde
+    When the data is fetched successfully, it will be stored
     in the local state with React's this.setState() method 
   */
   componentDidMount() {
@@ -29,7 +29,7 @@ class Overview extends Component {
         <p>
           Below there is an overview of the <strong>vehicles</strong>.
         </p>
-        <CreateButton />
+        <CreateVehicleButton />
 
         <table className="table">
           <thead>

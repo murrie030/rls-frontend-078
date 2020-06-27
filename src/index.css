@@ -67,6 +67,16 @@ a:focus {
 }
 /* End of content style */
 
+/* Horizontal rule */
+hr {
+  border-top: 1px solid #ff8c00;
+  width: 100%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+/* End of horizontal rule */
+
 /* Sidebar */
 .wrapper {
   display: flex;

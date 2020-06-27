@@ -60,9 +60,6 @@ const Sidebar = () => {
         </ul>
       </nav>
       {/* End sidebar */}
-
-      {/* Page Content */}
-      <div id="content">{/* <Home /> */}</div>
     </div>
   );
 };

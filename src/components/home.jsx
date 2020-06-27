@@ -6,7 +6,7 @@ class Home extends Component {
   render() {
     return (
       <div className="container" id="content">
-        <div className="Home-div" id="welcome-section">
+        <div id="welcome-section">
           <h1>Connect the world...</h1>
           <p>
             Welcome to the application that is created for the project of
@@ -26,7 +26,7 @@ class Home extends Component {
           />
         </div>
 
-        <div className="Home-div" id={styles.informationSection}>
+        <div id={styles.informationSection}>
           <h1>Information</h1>
           <p>
             The European agency{" "}

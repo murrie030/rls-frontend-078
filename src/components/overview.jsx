@@ -29,8 +29,10 @@ class Overview extends Component {
     return (
       <div className="container" id="content">
         <h1>Overview</h1>
+        <hr />
         <p>
-          Below there is an overview of the <strong>vehicles</strong>.
+          Below there is an overview of the <strong>vehicles</strong>. Click the
+          ID to get information about a specific vehicle.
         </p>
         <CreateVehicleButton />
 

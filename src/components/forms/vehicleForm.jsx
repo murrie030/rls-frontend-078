@@ -128,21 +128,6 @@ class VehicleForm extends Component {
               ></input>
             </div>
             {/* End of Rollingstock ID */}
-
-            {/* Owner ID */}
-            <div className="form-group col-md-6">
-              <label for="owner-id">
-                <b>6)</b> Owner ID
-              </label>
-              <input
-                type="number"
-                className="form-control"
-                id="owner-id"
-                name="owner-id"
-                readOnly
-              ></input>
-            </div>
-            {/* End of Owner ID */}
           </div>
         </form>
         {/* End IDs form */}
@@ -159,7 +144,7 @@ class VehicleForm extends Component {
             {/* Traction Type */}
             <div className="form-group col-md-6">
               <label for="traction-type">
-                <b>7)</b> Traction Type
+                <b>6)</b> Traction Type
               </label>
               <input
                 type="number"
@@ -173,7 +158,7 @@ class VehicleForm extends Component {
             {/* Powered Locomotive or Trainset */}
             <div className="form-group col-md-6">
               <label for="powered-locomotive-or-trainset">
-                <b>8)</b> Powered Locomotive or Trainset
+                <b>7)</b> Powered Locomotive or Trainset
               </label>
               <select className="form-control" id="form-control-select-1">
                 <option>true</option>
@@ -188,7 +173,7 @@ class VehicleForm extends Component {
             {/* Trainset Orientation */}
             <div className="form-group col-md-6">
               <label for="trainset-orientation">
-                <b>9)</b> Trainset Orientation
+                <b>8)</b> Trainset Orientation
               </label>
               <input
                 type="number"
@@ -202,7 +187,7 @@ class VehicleForm extends Component {
             {/* Keeper Shortname */}
             <div className="form-group col-md-6">
               <label for="keeper-short-name">
-                <b>10)</b> Keeper Shortname
+                <b>9)</b> Keeper Shortname
               </label>
               <input
                 type="text"
@@ -218,7 +203,7 @@ class VehicleForm extends Component {
           {/* Internal Vehicle Facility */}
           <div className="form-group">
             <label for="internal-vehicle-facility">
-              <b>11)</b> Internal Vehicle Facility
+              <b>10)</b> Internal Vehicle Facility
             </label>
             <input
               type="text"
@@ -235,7 +220,7 @@ class VehicleForm extends Component {
             {/* Characteristic Description Code */}
             <div className="form-group col-md-6">
               <label for="characteristic-description-code">
-                <b>12)</b> Characteristic Description Code
+                <b>11)</b> Characteristic Description Code
               </label>
               <input
                 type="number"
@@ -249,7 +234,7 @@ class VehicleForm extends Component {
             {/* Facility Type Description Code */}
             <div className="form-group col-md-6">
               <label for="facility-type-destriction-code">
-                <b>13)</b> Facility Type Description Code
+                <b>12)</b> Facility Type Description Code
               </label>
               <input
                 type="number"
@@ -265,7 +250,7 @@ class VehicleForm extends Component {
           {/* Information to be Displayed */}
           <div className="form-group">
             <label for="information-to-be-displayed">
-              <b>14)</b> Information
+              <b>13)</b> Information
             </label>
             <input
               type="text"
@@ -281,7 +266,7 @@ class VehicleForm extends Component {
           {/* Description */}
           <div className="form-group">
             <label for="description">
-              <b>15)</b> Description
+              <b>14)</b> Description
             </label>
             <textarea
               className="form-control"

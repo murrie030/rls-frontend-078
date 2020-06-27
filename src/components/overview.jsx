@@ -1,6 +1,6 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-import "./buttons/createVehicleButton";
 import CreateVehicleButton from "./buttons/createVehicleButton";
 
 class Overview extends Component {
@@ -23,6 +23,9 @@ class Overview extends Component {
   }
 
   render() {
+    const idStyle = {
+      color: "orange",
+    };
     return (
       <div className="container" id="content">
         <h1>Overview</h1>
@@ -48,7 +51,9 @@ class Overview extends Component {
           <tbody>
             {this.state.data.map((vehicle) => (
               <tr key={vehicle.id}>
-                <th scope="row">{vehicle.id}</th>
+                <Link to={`/overview/vehicle-id=${vehicle.id}`}>
+                  <td style={idStyle}>{vehicle.id}</td>
+                </Link>
                 <td>{vehicle.internalVehicleFacility}</td>
                 <td>{vehicle.informationToBeDisplayed}</td>
               </tr>

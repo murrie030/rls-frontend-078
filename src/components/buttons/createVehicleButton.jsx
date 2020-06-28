@@ -8,10 +8,12 @@ const CreateVehicleButton = () => {
     borderRadius: "54px",
     fontSize: "30px",
   };
+
   return (
     <button
       type="button"
       className="btn btn-success"
+      id="createButton"
       title="Create new vehicle"
       style={style}
     >

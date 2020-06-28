@@ -84,7 +84,7 @@ class VehicleForm extends Component {
           <div className="form-row">
             {/* Vehicle ID */}
             <div className="form-group col-md-6">
-              <label for="vehicle-id">
+              <label htmlFor="vehicle-id">
                 <b>1)</b> Vehicle ID
               </label>
               <input
@@ -99,7 +99,7 @@ class VehicleForm extends Component {
 
             {/* Coach or Trainset Commercial Data ID */}
             <div className="form-group col-md-6">
-              <label for="coach-or-trainset-commercial-data-id">
+              <label htmlFor="coach-or-trainset-commercial-data-id">
                 <b>2)</b> Coach or Trainset Commercial Data ID
               </label>
               <input
@@ -118,7 +118,7 @@ class VehicleForm extends Component {
           <div className="form-row">
             {/* Itinerary of Rollingstock ID */}
             <div className="form-group col-md-6">
-              <label for="itinerary-of-rollingstock-id">
+              <label htmlFor="itinerary-of-rollingstock-id">
                 <b>3)</b> Itinerary of Rollingstock ID
               </label>
               <input
@@ -133,7 +133,7 @@ class VehicleForm extends Component {
 
             {/* Services Code */}
             <div className="form-group col-md-6">
-              <label for="services-code">
+              <label htmlFor="services-code">
                 <b>4)</b> Services Code
               </label>
               <textarea
@@ -162,7 +162,7 @@ class VehicleForm extends Component {
           <div className="form-row">
             {/* Traction Type */}
             <div className="form-group col-md-6">
-              <label for="traction-type">
+              <label htmlFor="traction-type">
                 <b>6)</b> Traction Type
               </label>
               <input
@@ -176,7 +176,7 @@ class VehicleForm extends Component {
 
             {/* Powered Locomotive or Trainset */}
             <div className="form-group col-md-6">
-              <label for="powered-locomotive-or-trainset">
+              <label htmlFor="powered-locomotive-or-trainset">
                 <b>7)</b> Powered Locomotive or Trainset
               </label>
               <select
@@ -194,7 +194,7 @@ class VehicleForm extends Component {
           <div className="form-row">
             {/* Trainset Orientation */}
             <div className="form-group col-md-6">
-              <label for="trainset-orientation">
+              <label htmlFor="trainset-orientation">
                 <b>8)</b> Trainset Orientation
               </label>
               <input
@@ -208,7 +208,7 @@ class VehicleForm extends Component {
 
             {/* Keeper Shortname */}
             <div className="form-group col-md-6">
-              <label for="keeper-short-name">
+              <label htmlFor="keeper-short-name">
                 <b>9)</b> Keeper Shortname
               </label>
               <input
@@ -224,7 +224,7 @@ class VehicleForm extends Component {
           {/* Row 6 */}
           {/* Internal Vehicle Facility */}
           <div className="form-group">
-            <label for="internal-vehicle-facility">
+            <label htmlFor="internal-vehicle-facility">
               <b>10)</b> Internal Vehicle Facility
             </label>
             <input
@@ -241,7 +241,7 @@ class VehicleForm extends Component {
           <div className="form-row">
             {/* Characteristic Description Code */}
             <div className="form-group col-md-6">
-              <label for="characteristic-description-code">
+              <label htmlFor="characteristic-description-code">
                 <b>11)</b> Characteristic Description Code
               </label>
               <input
@@ -255,7 +255,7 @@ class VehicleForm extends Component {
 
             {/* Facility Type Description Code */}
             <div className="form-group col-md-6">
-              <label for="facility-type-destriction-code">
+              <label htmlFor="facility-type-destriction-code">
                 <b>12)</b> Facility Type Description Code
               </label>
               <input
@@ -271,7 +271,7 @@ class VehicleForm extends Component {
           {/* Row 8 */}
           {/* Information to be Displayed */}
           <div className="form-group">
-            <label for="information-to-be-displayed">
+            <label htmlFor="information-to-be-displayed">
               <b>13)</b> Information
             </label>
             <input
@@ -287,7 +287,7 @@ class VehicleForm extends Component {
           {/* Row 9 */}
           {/* Description */}
           <div className="form-group">
-            <label for="description">
+            <label htmlFor="description">
               <b>14)</b> Description
             </label>
             <textarea

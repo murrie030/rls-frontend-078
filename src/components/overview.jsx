@@ -62,7 +62,10 @@ class Overview extends Component {
           Below there is an overview of the <strong>vehicles</strong>. Click the
           ID to get information about a specific vehicle.
         </p>
-        <CreateVehicleButton />
+        <p>To create a new vehicle, click on the button.</p>
+        <Link to="/vehicle-create-form">
+          <CreateVehicleButton />
+        </Link>
 
         <table className="table">
           <thead>

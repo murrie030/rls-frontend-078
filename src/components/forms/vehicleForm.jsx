@@ -1,23 +1,59 @@
 import React, { Component } from "react";
 
 class VehicleForm extends Component {
-  // constructor(props) {
-  //   super(props);
+  constructor(props) {
+    super(props);
 
-  //   this.state = {
-  //     data: [],
-  //   };
-  // }
+    this.state = {
+      data: [],
+    };
+  }
 
   /* 
     When the data is fetched successfully, it will be stored
-    in the local state with React's this.setState() method 
+    in the local state with React's this.setState() method.
+    Here, the API will be fetched with the vehicle ID that is stored in localStorage. 
   */
-  // componentDidMount() {
-  //   fetch("http://localhost:5000/api/v1/vehicles/2")
-  //     .then((respone) => respone.json())
-  //     .then((data) => this.setState({ data: data.data }));
-  // }
+  componentDidMount() {
+    if (this.props.location.data != null) {
+      sessionStorage.setItem("vehicleId", this.props.location.data);
+    }
+    fetch("http://localhost:5000/api/v1/vehicles/" + sessionStorage.vehicleId)
+      .then((respone) => respone.json())
+      .then(function (myJson) {
+        // Set every input value
+        document.getElementById("vehicle-id").value = myJson.data.id;
+        document.getElementById("coach-or-trainset-commercial-data-id").value =
+          myJson.data.coachOrTrainsetCommercialData.id;
+        document.getElementById("itinerary-of-rollingstock-id").value =
+          myJson.data.itineraryOfRollingStock.id;
+
+        // Loop through the services code
+        for (const service of myJson.data.services) {
+          const serviceValue = document.getElementById("services-code").value;
+          document.getElementById("services-code").value =
+            serviceValue + service.id + "\n";
+        }
+
+        document.getElementById("traction-type").value =
+          myJson.data.tractionType;
+        document.getElementById("powered-locomotive-or-trainse").value =
+          myJson.data.poweredLocomotiveOrTrainset;
+        document.getElementById("trainset-orientation").value =
+          myJson.data.trainsetOrientation;
+        document.getElementById("keeper-short-name").value =
+          myJson.data.keeperShortName;
+        document.getElementById("internal-vehicle-facility").value =
+          myJson.data.internalVehicleFacility;
+        document.getElementById("characteristic-description-code").value =
+          myJson.data.characteristicDescriptionCode;
+        document.getElementById("facility-type-destriction-code").value =
+          myJson.data.facilityTypeDescriptionCode;
+        document.getElementById("information-to-be-displayed").value =
+          myJson.data.informationToBeDisplayed;
+        document.getElementById("description").value = myJson.data.description;
+      });
+  }
 
   render() {
     const subtitle = {
@@ -25,9 +61,6 @@ class VehicleForm extends Component {
     };
     return (
       <div className="container" id="content">
-        {/* {this.state.data.map((vehicle) => (
-          <p key={vehicle.id}>test with {vehicle.id}</p>
-        ))} */}
         <div className="title">
           <h1>Vehicle Detail</h1>
           <hr />
@@ -95,40 +128,23 @@ class VehicleForm extends Component {
             </div>
             {/* End Itinerary of Rollingstock ID */}
 
-            {/* Restriction ID */}
+            {/* Services Code */}
             <div className="form-group col-md-6">
-              <label for="restriction-id">
-                <b>4)</b> Restriction ID
+              <label for="services-code">
+                <b>4)</b> Services Code
               </label>
-              <input
+              <textarea
                 type="number"
                 className="form-control"
-                id="restriction-id"
-                name="restriction-id"
+                id="services-code"
+                name="services-code"
                 readOnly
-              ></input>
+              ></textarea>
             </div>
-            {/* End Restriction ID */}
+            {/* End Services Code */}
           </div>
-          {/* End Row 2 */}
 
-          {/* Row 3 */}
-          <div className="form-row">
-            {/* Rollingstock ID */}
-            <div className="form-group col-md-6">
-              <label for="rolling-stock-id">
-                <b>5)</b> Rollingstock ID
-              </label>
-              <input
-                type="number"
-                className="form-control"
-                id="rolling-stock-id"
-                name="rolling-stock-id"
-                readOnly
-              ></input>
-            </div>
-            {/* End of Rollingstock ID */}
-          </div>
+          {/* End Row 2 */}
         </form>
         {/* End IDs form */}
 
@@ -160,9 +176,13 @@ class VehicleForm extends Component {
               <label for="powered-locomotive-or-trainset">
                 <b>7)</b> Powered Locomotive or Trainset
               </label>
-              <select className="form-control" id="form-control-select-1">
-                <option>true</option>
-                <option>false</option>
+              <select
+                className="form-control"
+                id="powered-locomotive-or-trainse"
+                disabled
+              >
+                <option value="true">true</option>
+                <option value="false">false</option>
               </select>
             </div>
           </div>

@@ -4,10 +4,18 @@ const CreateVehicleButton = () => {
   const style = {
     margin: "1rem",
     float: "right",
+    width: "60px",
+    borderRadius: "54px",
+    fontSize: "30px",
   };
   return (
-    <button type="button" className="btn btn-success" style={style}>
-      Create new vehicle
+    <button
+      type="button"
+      className="btn btn-success"
+      title="Create new vehicle"
+      style={style}
+    >
+      +
     </button>
   );
 };

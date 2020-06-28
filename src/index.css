@@ -120,3 +120,7 @@ a[aria-expanded="true"] {
   color: #d35400;
 }
 /* End of sidebar */
+
+Link {
+  color: blue;
+}

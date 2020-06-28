@@ -6,21 +6,31 @@ class VehicleCreateForm extends Component {
   constructor(props) {
     super(props);
 
+    // State property
     this.state = {
-      data: [],
+      vehicleData: null,
     };
   }
 
   componentDidMount() {
-    fetch("http://localhost:5000/api/v1/vehicles")
+    // Simple POST request with a JSON body using fetch
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ title: "React POST Request for Vehicle" }),
+    };
+
+    fetch("http://localhost:5000/api/v1/vehicles", requestOptions)
       .then((response) => response.json())
-      .then((data) => this.setState({ data: data.data }));
+      .then((data) => this.setState({ vehicleData: data }));
   }
 
   render() {
     const subtitle = {
       marginTop: "1.5rem",
     };
+
+    const { vehicleData } = this.state;
     return (
       <div className="container" id="content">
         <div className="title">
@@ -28,6 +38,8 @@ class VehicleCreateForm extends Component {
           <hr />
           <p>Please fill in the fields that are shown in this form.</p>
         </div>
+
+        <div>Vehicle Data {vehicleData}</div>
 
         <div className="information-title" style={subtitle}>
           <h4>Information</h4>

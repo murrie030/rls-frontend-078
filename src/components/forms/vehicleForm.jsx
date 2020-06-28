@@ -179,7 +179,6 @@ class VehicleForm extends Component {
               <select
                 className="form-control"
                 id="powered-locomotive-or-trainse"
-                disabled
               >
                 <option value="true">true</option>
                 <option value="false">false</option>

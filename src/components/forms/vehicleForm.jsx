@@ -12,7 +12,7 @@ class VehicleForm extends Component {
   /* 
     When the data is fetched successfully, it will be stored
     in the local state with React's this.setState() method.
-    Here, the API will be fetched with the vehicle ID that is stored in localStorage. 
+    Here, the API will be fetched with the vehicle ID that is stored in sessionStorage. 
   */
   componentDidMount() {
     if (this.props.location.data != null) {

@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 
+import UpdateButton from "../buttons/updateButton";
+import DeleteButton from "../buttons/deleteButton";
+
 class VehicleForm extends Component {
   constructor(props) {
     super(props);
@@ -296,6 +299,9 @@ class VehicleForm extends Component {
           </div>
           {/* End of Description */}
           {/* End of Row 9 */}
+
+          <UpdateButton />
+          <DeleteButton />
         </form>
         {/* End Additional Information Form */}
       </div>

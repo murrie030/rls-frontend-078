@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 import styles from "../css/home.module.css";
 
@@ -13,9 +14,11 @@ class Home extends Component {
             RailLinkSystems. This application is particular for the passenger
             wagons. The idea is to abstract an intuitive web app into simple
             actions in a responsive GUI. The main focus is on the{" "}
-            <a className={styles.a} href="train-composition-message.html">
-              Train Composition Message (TCM)
-            </a>
+            <Link to="/tcm">
+              <a className={styles.a} href="tcm.html">
+                Train Composition Message (TCM)
+              </a>
+            </Link>
             .
           </p>
           <img

@@ -29,9 +29,25 @@ class Overview extends Component {
     (It doesn't delete the vehicle though!)
   */
   deleteVehicleButton(id) {
-    window.confirm(
+    const result = window.confirm(
       "Are you sure that you want to delete vehicle with id " + id + "?"
     );
+    if (result === true) {
+      fetch("http://localhost:5000/api/v1/vehicles/" + id, {
+        method: "DELETE",
+      }).then(function (response) {
+        if (response.status === 200) {
+          alert("Vehicle with id " + id + " deleted successfully.");
+          window.location.reload(false);
+        } else {
+          alert(
+            "Failed to delete vehicle with id " +
+              id +
+              ", get sure that this vehicle in not in a train."
+          );
+        }
+      });
+    }
   }
 
   render() {
